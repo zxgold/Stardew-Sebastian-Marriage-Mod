@@ -1,0 +1,12 @@
+{
+  "Name": "塞巴斯蒂安婚后剧情扩展",
+  "Author": "zx",
+  "Version": "1.0.0",
+  "Description": "丰富塞巴斯蒂安婚后的日常行为。",
+  "UniqueID": "zx.SebastianMarriageExpansion",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
