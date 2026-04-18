@@ -1,0 +1,25 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian", // 【必须改为这个路径】
+            "Entries": {
+                // 既然已经贴了标签，系统会自动来这里找这个 Key
+                "Seb_Jealous_Harvey_1": "你去找哈维了？...他那身白大褂就那么好看吗？$s",
+                "Seb_Jealous_Harvey_2": "听说你今天给哈维送了礼物...你哪不舒服吗？还是单纯想见他？$a",
+                "Seb_Jealous_Harvey_3": "以后要是哪里不舒服，直接跟我说。别总往诊所跑，我不喜欢。$4"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+            "Entries": {
+                // 核心技术：动态拼接 i18n 键名
+                // 引擎掷出 3，这里就变成了 {{i18n: seb.talk.3}}
+                "Indoor_Day_0": "{{i18n: seb.talk.{{SebTalkNumber}} }}",
+                "Indoor_Day_1": "{{i18n: seb.talk.{{SebTalkNumber}} }}",
+                "Indoor_Day_2": "{{i18n: seb.talk.{{SebTalkNumber}} }}"
+            }
+        }
+    ]
+}
